@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d91b1fd5e8.js" crossorigin="anonymous"></script>
+    <title>Busky Code Editor</title>
+</head>
+<body>
+
+    <!-- Header & Menu-->
+
+    <div class="header">
+		<a href="#" class="logo">BuskyCode</a>
+		<div class="header-right">
+            
+			<a href="#about">About</a>
+			<a href="#contact">Contact</a>
+            <a href="#about">Download</a>
+			<a href="#register">Register</a>
+			<a href="#signin">Sign In</a>
+		</div>
+	</div>
+
+    <!-- Code Editor -->
+
+    <div class="container">
+        <div class="left">
+            <label><i style="background-color: rgb(233, 44, 44);" class="fa-brands fa-html5"></i>HTML</label>
+            <textarea id="html-code" onkeyup="run()" placeholder="write html code here..."></textarea>
+
+            <label><i style="background-color: rgb(52, 52, 231);" class="fa-brands fa-css3-alt"></i>CSS</label>
+            <textarea id="css-code" onkeyup="run()" placeholder="write css code here..."></textarea>
+
+            <label><i style="background-color: rgb(216, 196, 17);" class="fa-brands fa-js"></i>JavaScript</label>
+            <textarea id="js-code" onkeyup="run()" placeholder="write javascript code here..."></textarea>
+        </div>
+        <div class="right">
+            <label><i class="fa-solid fa-play"></i>Output</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+
+<!-- Footer Section -->
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- About Column -->
+        <div class="col-md-4">
+          <h4>About Us</h4>
+          <p class="about-text">BuskyCode editor is an essential tool for software development, and provide developers with the ability to write, edit, and debug code quickly and efficiently in HTML, CSS and JavaScript. Happy Coding!</p>
+        </div>
+
+        <!-- Pages Column -->
+        <div class="col-md-4">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources Column -->
+        <div class="col-md-4">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Helpful Tools</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Column -->
+        <div class="col-md-4">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>123 Main St</li>
+            <li>City, State ZIP</li>
+            <li>Phone: (123) 456-7890</li>
+          </ul>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://linkedin.com/in/edorgodwin"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+        <div class="col-md-12">
+          <hr>
+          <p class="text-center">&copy; 2023 All Rights Reserved | Developed By <a href="https://linkedin.com/in/edorgodwin" target="_blank">Edor Godwin Etornam</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+<!-- JavaScript External File -->
+ <script src="index.js"></script>   
+</body>
+
+</html>
